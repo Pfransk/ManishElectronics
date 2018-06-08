@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "907221065931",
+    "firebase_url": "https://manishelectronics-572d4.firebaseio.com",
+    "project_id": "manishelectronics-572d4",
+    "storage_bucket": "manishelectronics-572d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907221065931:android:4d2d90e5bfca30de",
+        "android_client_info": {
+          "package_name": "com.immense.manishelectronics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907221065931-5ctn6v652b266j4a8pa1h90qpe8sqr8c.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "907221065931-5ctn6v652b266j4a8pa1h90qpe8sqr8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgNoPlwL1lwSBDwapQzx_HGbiRmSWCPFk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
