@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"/>
+
     <Button
+        android:id="@+id/Signoutbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN OUT"
-        android:id="@+id/Signoutbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tv"
+        android:layout_marginEnd="28dp"
+        android:text="@string/signout" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#05ab9a"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        app:met_floatingLabel="normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="95dp"
+        android:text="@string/SelecttheRegionandLocation" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#05ab9a"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="201dp"
+        app:met_floatingLabel="normal"/>
 
 </RelativeLayout>

@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">ManishElectronics</string>
+    <string name="South_Mumbai">South Mumbai</string>
+    <string name="Eastern_Suburbs">Eastern Suburbs</string>
+    <string name="Western_Suburbs">Western Suburbs</string>
+    <string name="Harbour_Suburbs">Harbour Suburbs</string>
+    <string name="signout">SIGNOUT</string>
+    <string name="SelecttheRegionandLocation">Select the Region and Location of Order.</string>
+    <string-array name="Region">
+    <item>South Mumbai</item>
+    <item>Eastern Suburbs</item>
+    <item>Western Suburbs</item>
+    <item>Harbour Suburbs</item>
+</string-array>
+
+    <string-array name="SouthMumbai">
+        <item>Antop Hill</item>
+        <item>Byculla</item>
+        <item>Colaba</item>
+        <item>Dadar</item>
+        <item>Fort</item>
+    </string-array>
+
+    <string-array name="EasternSuburbs">
+        <item>Bhandup</item>
+        <item>Kanjurmarg</item>
+        <item>Ghatkopar</item>
+        <item>Kurla</item>
+    </string-array>
+
+    <string-array name="WesternSuburbs">
+        <item>Andheri</item>
+        <item>Bandra</item>
+        <item>Borivali</item>
+        <item>Dahisar</item>
+    </string-array>
+
+    <string-array name="HarbourSuburbs">
+        <item>Chunabhatti</item>
+        <item>Chembur</item>
+        <item>Govandi</item>
+        <item>Mankhurd</item>
+    </string-array>
 </resources>
