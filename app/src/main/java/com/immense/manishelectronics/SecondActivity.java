@@ -23,19 +23,20 @@ import static android.R.layout.simple_spinner_item;
 public class SecondActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> arrayAdapter, arrayAdapter2;
     TextView tv;
-    Button button;
+    Button button,button2;
     MaterialBetterSpinner spinner1, spinner2;
-
+    String s2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
         Intent i = getIntent();
-        String s = i.getStringExtra("Name");
+        final String s = i.getStringExtra("Name");
 
         tv = (TextView) findViewById(R.id.tv);
         button = (Button) findViewById(R.id.Signoutbutton);
+        button2 = (Button) findViewById(R.id.b1);
         spinner1 = (MaterialBetterSpinner) findViewById(R.id.spinner1);
         spinner2 = (MaterialBetterSpinner) findViewById(R.id.spinner2);
         arrayAdapter = ArrayAdapter.createFromResource(this, R.array.Region, simple_spinner_item);
@@ -45,7 +46,17 @@ public class SecondActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> arrayAdapter2 = ArrayAdapter.createFromResource(this, R.array.SouthMumbai, simple_spinner_item);
         arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(arrayAdapter2);
+        button2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
+                    Intent i = new Intent(getApplicationContext(),Firebase.class);
+                    i.putExtra("spinner1",spinner1.getText().toString());
+                    i.putExtra("spinner2",spinner2.getText().toString());
+                    i.putExtra("Username",s);
+                    startActivity(i);
+                }
+            });
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
